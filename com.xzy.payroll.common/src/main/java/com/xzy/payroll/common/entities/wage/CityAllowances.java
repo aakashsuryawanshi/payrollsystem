@@ -8,6 +8,8 @@ import com.xzy.payroll.common.entities.BaseEntity;
 public class CityAllowances extends BaseEntity{
 	String city;
 	String allowances;
+	String allowanceId;
+	
 	
 	public CityAllowances(){
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -27,6 +29,11 @@ public class CityAllowances extends BaseEntity{
 	public void setAllowances(String allowances) {
 		this.allowances = allowances;
 	}
-	
+	public String getAllowanceId() {
+		return allowanceId;
+	}
+	public void setAllowanceId(String allowanceId) {
+		this.allowanceId = allowanceId;
+	}
 	
 }

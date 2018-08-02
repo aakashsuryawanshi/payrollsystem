@@ -4,12 +4,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class EntDepot extends BaseEntity{
-	String depotName;
+	String name;
 	String region;
 	String state;
 	String district;
 	String taluka;
 	String busStand;
+	String code;
 	
 	public EntDepot(){
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -18,11 +19,11 @@ public class EntDepot extends BaseEntity{
 		this.setCreatedDate(formatter.format(date));
 	}
 	
-	public String getDepotName() {
-		return depotName;
+	public String getName() {
+		return name;
 	}
-	public void setDepotName(String depotName) {
-		this.depotName = depotName;
+	public void setName(String depotName) {
+		this.name = depotName;
 	}
 	public String getRegion() {
 		return region;
@@ -53,6 +54,14 @@ public class EntDepot extends BaseEntity{
 	}
 	public void setBusStand(String busStand) {
 		this.busStand = busStand;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 	
 	
